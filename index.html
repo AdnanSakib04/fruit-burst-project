@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Fruit Brust</title>
+  <title>Fruit Burst</title>
 
   <!-- tailwind and daisyUI cdn -->
 
@@ -29,49 +29,74 @@
 
 <body class="font_lato">
 
-  <header class="max-w-[1440px] mx-auto ">
+  <header class="max-w-[1440px] mx-auto p-5 lg:px-0">
     <!-- navbar section  -->
-    <nav class="mx-5 lg:mx-0">
-      <div class="navbar bg-base-100">
-        <div class="navbar-start">
+    <nav class=" ">
+      <div class="navbar justify-between bg-base-100 lg:bg-[#F85559] rounded-none lg:rounded-[600px] px-0 py-0 md:px-10 md:py-4 mt-0 lg:mt-6 ">
+        
+        <div class="navbar-start hidden lg:flex">
+          <ul class="menu menu-horizontal px-1 text-white">
+            <li><a>Home</a></li>
+              <li><a>About Us</a></li>
+              <li><a>Shop</a></li>
+              <li><a>All Fruits</a></li>
+          </ul>
+        </div>
+        <div class="navbar-center">
+         
+          <a class="btn btn-ghost normal-case text-xl text-black lg:text-white font-bold">
+            <div class="flex gap-4 items-center justify-center ">
+              <img class="w-[40px] h-[40px]" src="./images/logo.png" alt="">
+              <h1 class="">Fruit Burst</h1>
+            </div>
+          </a>
+        </div>
+        <div class="navbar-end">
+          <!-- <a class="btn">Button</a> -->
+          <!-- <input type="text" placeholder="Search here" class="input bg-white  md:w-[400px] rounded-[50px] w-24 " /> -->
+          <div class="hidden lg:block">
+            <div class="relative flex items-center">
+              <input
+                type="text"
+                placeholder="Search here"
+                class="input bg-white md:w-[400px] rounded-[50px] w-24 pr-10"
+              />
+              <div class="  absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-400">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- dropdown menu -->
           <div class="dropdown">
-            <label tabindex="0" class="btn btn-ghost lg:hidden">
+            <label tabindex="0" class="btn btn-ghost lg:hidden ">
               <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
                 stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
               </svg>
             </label>
-            <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-              <li><a>Item 1</a></li>
+            <ul tabindex="0" class="menu menu-sm  dropdown-content mt-3  z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-[18px] relative -right-6 md:right-30">
               <li>
-                <a>Parent</a>
-                <ul class="p-2">
-                  <li><a>Submenu 1</a></li>
-                  <li><a>Submenu 2</a></li>
-                </ul>
+                <div class="relative flex items-center">
+                  <input
+                    type="text"
+                    placeholder="Search"
+                    class="input input-bordered bg-white   w-full h-full"
+                  />
+                  <div class="absolute right-5 top-1/2 transform -translate-y-1/2 text-gray-400"> 
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                  </div>
+                </div>
               </li>
-              <li><a>Item 3</a></li>
+              <li><a>Home</a></li>
+              <li><a>About Us</a></li>
+              <li><a>Shop</a></li>
+              <li><a>All Fruits</a></li>              
+                           
             </ul>
           </div>
-          <a class="btn btn-ghost normal-case text-xl">daisyUI</a>
-        </div>
-        <div class="navbar-center hidden lg:flex">
-          <ul class="menu menu-horizontal px-1">
-            <li><a>Item 1</a></li>
-            <li tabindex="0">
-              <details>
-                <summary>Parent</summary>
-                <ul class="p-2">
-                  <li><a>Submenu 1</a></li>
-                  <li><a>Submenu 2</a></li>
-                </ul>
-              </details>
-            </li>
-            <li><a>Item 3</a></li>
-          </ul>
-        </div>
-        <div class="navbar-end">
-          <a class="btn">Button</a>
+          
         </div>
       </div>
     </nav>
@@ -282,7 +307,7 @@
           </figure>
           <div class="card-body items-center text-center">
             <h2 class="card-title">12.90$ - 18.85$</h2>
-            <p>Red Dragon</p>
+            <p>Dragon Fruit</p>
             <span class="text-[#1212121A] mb-2">____________________________</span>
             <div class="rating rating-half">
               <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559] mask-half-1" />
@@ -306,7 +331,7 @@
 
                   <div class="flex justify-center flex-col items-center pt-5 ">
                     <img class="mb-2 w-1/2" src="./images/fruit8.png" alt="">
-                    <h2 class="text-2xl font-extrabold">Red Dragon</h2>
+                    <h2 class="text-2xl font-extrabold">Dragon Fruit</h2>
                     <p class="w-[300px] text-center my-3 text-base">Professional employees are there for you to pick the most
                       amazing and
                       fresh fruits.</p>
@@ -403,6 +428,7 @@
 
   </main>
 
+    <!-- footer -->
   <footer class="footer footer-center p-10 bg-[#121212] text-white">
     <div>
       <div class="flex gap-4 items-center mt-16 mb-10">
